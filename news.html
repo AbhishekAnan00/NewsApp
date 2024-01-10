@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <h1>NEWS</h1>
+    <!-- nav search button! -->
+    <div class="search-box">
+        <input
+          type="text"
+          placeholder=" news search..."
+          value=""
+          id="inputData"
+        />
+        <button id="searchBtn">search</button>
+    </div>
+    <!-- nav items & showbar! -->
+        <ul  class="sidebar">
+        <li class="responsive" id="sports" onclick="navClick('sports')">Sports</li>
+        <li class="responsive" id="politics" onclick="navClick('politics')">Politics</li>
+        <li class="responsive" id="travels" onclick="navClick('travels')">Travels</li>
+        <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        <!-- hide-sidebar! -->
+        <ul class="hide-sidebar">
+            <li onclick=hideSidebar() ><svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li>Sports</li>
+        <li>Politics<li>
+        <li>Travels</li>
+        </ul>
+    </nav>
+    </div>
+        <!-- card box! -->
+    <div class="card-box"></div>
+    <script src="news.js"></script>
+  </body>
+</html>
