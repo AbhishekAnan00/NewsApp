@@ -1,4 +1,4 @@
-let key = "pub_35380e82363fa6f94def32f0222781400a176";
+let key = "";
 let cardBox = document.querySelector(".card-box");
 let searchBtn = document.getElementById("searchBtn");
 let inputData = document.getElementById("inputData");
